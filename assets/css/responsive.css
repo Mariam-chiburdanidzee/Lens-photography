@@ -18,6 +18,9 @@
     header nav .burger.burger-active .line:nth-child(3) {
         transform: translateY(-10px) rotate(45deg);
     }
+    main .main-section .main-section__hero .banner-title{
+        font-size: var(--font-size-small);
+    }
 
     .slide-button,
     main .main-section .main-section__hero h1,
@@ -47,7 +50,7 @@
     header nav .nav-menu .nav-li .nav-link {
         filter: blur(30px);
         transform: translateX(-50%);
-        opacity: 0;
+        /* opacity: 0; */
     }
 }
 
