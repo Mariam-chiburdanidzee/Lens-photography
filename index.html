@@ -1,58 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <nav class="container">
-        <a href="#" class="nav-logo">
-          <h3>
-            L E
-            <img src="./assets/images/main-img/camera.png" alt="camera-logo" />
-            N S
-          </h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="#" class="nav-logo">
+        <h2 class="nav-logo-name">
+          L E
+          <img class="logo-image" src="./assets/images/main-img/camera.png" alt="camera-logo" />
+          N S
+        </h2>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-li">
+          <a href="#" class="nav-link">home</a>
+        </li>
+        <li class="nav-li">
+          <a href="#" class="nav-link">galery</a>
+        </li>
+        <li class="nav-li">
+          <a href="#" class="nav-link">about</a>
+        </li>
+        <li class="nav-li">
+          <a href="#" class="nav-link">contact</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="main-section">
+      <div class="main-section__hero container">
+        <h1 class="banner-title">Discover and share the world’s best photos</h1>
+        <p>
+          Get inspired with incredible photos from diverse styles and genres around the world.
+        </p>
+        <a  class="slide-button" href="#">
+          <button>sign up</button>
         </a>
-        <ul class="nav-menu">
-          <li class="nav-li">
-            <a href="#" class="nav-link">home</a>
+      </div>
+    </section>
+    <section class="section-separation">
+      <div class="container">
+        <h4>What makes us different</h4>
+        <div class="features">
+          <div class="box">
+            <div>
+              <img src="./assets/images/main-icons/gardening.png" alt="Image 1">
+            </div>
+            <div class="text">
+              <h3>Grow as a photographer</h3>
+              <p>Get immediate exposure with your first upload. Our Pulse algorithm surfaces new
+                photographs and photographers, ensuring your photos are seen by the community so you receive valuable
+                feedback on day one.</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./assets/images/main-icons/job-search.png" alt="Image 2">
+            <div class="text">
+              <h3>Build your career</h3>
+              <p>Market yourself as a professional photographer. Show that you’re available for hire
+                on your Profile and get discovered in Search results, showcase your articles, presents, videos, and more
+                with Resources, and create a Portfolio website to showcase your work.</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./assets/images/main-icons/pay-per-click.png" alt="Image 3">
+            <div class="text">
+              <h3>Sell your work</h3>
+              <p>Earn one of the highest royalty rates in the industry when you distribute your
+                photography through 500px to a global marketplace, where buyers can view and purchase your work for
+                commercial usage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-separation">
+      <div class="section-top wrapper">
+        <div class="section-wrapper-card">
+          <h2 class="section-banner-title">Editors’ Choice</h2>
+          <img class="section-banner-icon" src="./assets/images/main-icons/bookmark-for-favorites.png" alt="Your Image">
+        </div>
+      </div>
+      <div class="card-bottom-text">
+        <h3>The best of the best.</h3>
+        <p> Check back weekly to see what’s new.</p>
+        <button class="main-button first-button">View Editors’ Choice</button>
+      </div>
+      <div class="container">
+        <div class="photo-gallery">
+          <div class="column">
+            <div class="photo">
+              <img src="./assets/images/main-img/chucrch.jpg" alt="firework">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/orange-camera.jpg">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/blue.jpg" alt="firework">
+            </div>
+          </div>
+          <div class="column">
+            <div class="photo">
+              <img src="./assets/images/main-img/boat.jpg" alt="firework">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/stars.jpg" alt="firework">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/birds.jpg" alt="firework">
+            </div>
+          </div>
+          <div class="column">
+            <div class="photo">
+              <img src="./assets/images/main-img/african-girls.jpg" alt="firework">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/river.jpg" alt="firework">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/sarpi-village.jpg" alt="firework">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-separation">
+      <div class="section-bottom wrapper">
+        <div class="section-wrapper-card">
+          <h2 class="section-banner-title">Portfolio</h2>
+          <img class="section-banner-icon" src="./assets/images/main-icons/briefcase-black.png" alt="Your Image">
+        </div>
+      </div>
+      <div class="container">
+        <div class="card-bottom-text">
+          <h3>Designed and built for photographers</h3>
+          <p> Create your own high-quality website.</p>
+          <button class="main-button second-button">Get Started</button>
+          <img class="portfolio-photo" src="./assets/images/main-img/desktop_portfolio.fdf6ee3e (1).png" alt="">
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <a href="#" class="nav-logo center">
+          <h2 class="nav-logo-name">
+            L E
+            <img class="logo-image" src="./assets/images/main-img/camera.png" alt="camera-logo" />
+            N S
+          </h2>
+        </a>
+        <ul class="menu">
+          <li>
+            <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-li">
-            <a href="#" class="nav-link">galery</a>
+          <li>
+            <a class="nav-link"  href="#">Gallery</a>
           </li>
-          <li class="nav-li">
-            <a href="#" class="nav-link">about</a>
+          <li>
+            <a class="nav-link"  href="#">About</a>
           </li>
-          <li class="nav-li">
-            <a href="#" class="nav-link">contact</a>
+          <li>
+            <a class="nav-link"  href="#">Contact</a>
+          </li>
+          <li>
+            <a class="nav-link"  href="#">services</a>
+          </li>
+          <li>
+            <a class="nav-link"  href="#">pricing</a>
           </li>
         </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="main-section">
-        <div class="main-section__hero container">
-          <h1 class="banner-title">Welcome to my website</h1>
-          <p>
-            "Photography is a way of feeling, of touching, of loving. What you
-            have caught on film is captured forever... it remembers little
-            things, long after you have forgotten everything."
-          </p>
-          <span>- Aaron Siskind</span>
-        </div>
-      </section>
-    </main>
+        <ul class="media-icons">
+          <li>
+            <a href="#">
+              <img src="./assets/images/main-icons/facebook.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/main-icons/instagram.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/main-icons/linkedin.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/main-icons/Twitter.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <form class="input-form">
+          <input type="text" placeholder="Enter your email address" name="email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/app.js"></script>
+</body>
 
-    <script src="./assets/js/app.js"></script>
-  </body>
 </html>
