@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/css/responsive.css">
   <title>Home</title>
 </head>
+
 <body>
   <header>
     <nav class="container">
@@ -22,16 +23,16 @@
       </a>
       <ul class="nav-menu">
         <li class="nav-li">
-          <a href="#" class="nav-link">home</a>
+          <a href="#"  class="active-link" >home</a>
         </li>
         <li class="nav-li">
-          <a href="#" class="nav-link">galery</a>
+          <a href="./assets/files/gallery.html">galery</a>
         </li>
         <li class="nav-li">
-          <a href="#" class="nav-link">about</a>
+          <a href="#" >about</a>
         </li>
         <li class="nav-li">
-          <a href="#" class="nav-link">contact</a>
+          <a href="#" >contact</a>
         </li>
       </ul>
       <div class="burger">
@@ -48,9 +49,27 @@
         <p>
           Get inspired with incredible photos from diverse styles and genres around the world.
         </p>
-        <a  class="slide-button" href="#">
-          <button>sign up</button>
-        </a>
+        <a href="#" class="slide-button">
+          <button class="sign-up">Sign Up</button></a>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="login-form">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" placeholder="Enter email">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter password">
+              <div class="remember-me">
+              <input type="checkbox" class="remember-me">
+              <label for="remember-me">Remember-me</label>
+            </div>
+             <a href="#" class="submit-link">
+              <button type="submit">Sign In</button>
+            </a> 
+              <a href="#" class="forgot-password-link">Forgot Password?</a>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section-separation">
@@ -59,7 +78,7 @@
         <div class="features">
           <div class="box">
             <div>
-              <img src="./assets/images/main-icons/gardening.png" alt="Image 1">
+              <img src="./assets/images/main-icons/gardening.png" alt="gardening-icon">
             </div>
             <div class="text">
               <h3>Grow as a photographer</h3>
@@ -69,7 +88,7 @@
             </div>
           </div>
           <div class="box">
-            <img src="./assets/images/main-icons/job-search.png" alt="Image 2">
+            <img src="./assets/images/main-icons/job-search.png" alt="job-icon">
             <div class="text">
               <h3>Build your career</h3>
               <p>Market yourself as a professional photographer. Show that you’re available for hire
@@ -78,7 +97,7 @@
             </div>
           </div>
           <div class="box">
-            <img src="./assets/images/main-icons/pay-per-click.png" alt="Image 3">
+            <img src="./assets/images/main-icons/pay-per-click.png" alt="pay-per-click-icon">
             <div class="text">
               <h3>Sell your work</h3>
               <p>Earn one of the highest royalty rates in the industry when you distribute your
@@ -93,7 +112,7 @@
       <div class="section-top wrapper">
         <div class="section-wrapper-card">
           <h2 class="section-banner-title">Editors’ Choice</h2>
-          <img class="section-banner-icon" src="./assets/images/main-icons/bookmark-for-favorites.png" alt="Your Image">
+          <img class="section-banner-icon" src="./assets/images/main-icons/bookmark-for-favorites.png" alt="bookmark-icon">
         </div>
       </div>
       <div class="card-bottom-text">
@@ -108,32 +127,32 @@
               <img src="./assets/images/main-img/chucrch.jpg" alt="firework">
             </div>
             <div class="photo">
-              <img src="./assets/images/main-img/orange-camera.jpg">
+              <img src="./assets/images/main-img/orange-camera.jpg" alt="orange-camera">
             </div>
             <div class="photo">
-              <img src="./assets/images/main-img/blue.jpg" alt="firework">
-            </div>
-          </div>
-          <div class="column">
-            <div class="photo">
-              <img src="./assets/images/main-img/boat.jpg" alt="firework">
-            </div>
-            <div class="photo">
-              <img src="./assets/images/main-img/stars.jpg" alt="firework">
-            </div>
-            <div class="photo">
-              <img src="./assets/images/main-img/birds.jpg" alt="firework">
+              <img src="./assets/images/main-img/blue.jpg" alt="blue-pic">
             </div>
           </div>
           <div class="column">
             <div class="photo">
-              <img src="./assets/images/main-img/african-girls.jpg" alt="firework">
+              <img src="./assets/images/main-img/boat.jpg" alt="boat">
             </div>
             <div class="photo">
-              <img src="./assets/images/main-img/river.jpg" alt="firework">
+              <img src="./assets/images/main-img/stars.jpg" alt="stars">
             </div>
             <div class="photo">
-              <img src="./assets/images/main-img/sarpi-village.jpg" alt="firework">
+              <img src="./assets/images/main-img/birds.jpg" alt="birds">
+            </div>
+          </div>
+          <div class="column">
+            <div class="photo">
+              <img src="./assets/images/main-img/african-girls.jpg" alt="girls">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/river.jpg" alt="river">
+            </div>
+            <div class="photo">
+              <img src="./assets/images/main-img/sarpi-village.jpg"  alt="village">
             </div>
           </div>
         </div>
@@ -143,7 +162,7 @@
       <div class="section-bottom wrapper">
         <div class="section-wrapper-card">
           <h2 class="section-banner-title">Portfolio</h2>
-          <img class="section-banner-icon" src="./assets/images/main-icons/briefcase-black.png" alt="Your Image">
+          <img class="section-banner-icon" src="./assets/images/main-icons/briefcase-black.png" alt="briefcase-icon">
         </div>
       </div>
       <div class="container">
@@ -151,7 +170,7 @@
           <h3>Designed and built for photographers</h3>
           <p> Create your own high-quality website.</p>
           <button class="main-button second-button">Get Started</button>
-          <img class="portfolio-photo" src="./assets/images/main-img/desktop_portfolio.fdf6ee3e (1).png" alt="">
+          <img class="portfolio-photo" src="./assets/images/main-img/desktop_portfolio.fdf6ee3e (1).png" alt="portfolio">
         </div>
     </section>
   </main>
@@ -188,33 +207,33 @@
         <ul class="media-icons">
           <li>
             <a href="#">
-              <img src="./assets/images/main-icons/facebook.png" alt="">
+              <img src="./assets/images/main-icons/facebook.png" alt="facebook-icon">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./assets/images/main-icons/instagram.png" alt="">
+              <img src="./assets/images/main-icons/instagram.png" alt="instagram-icon">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./assets/images/main-icons/linkedin.png" alt="">
+              <img src="./assets/images/main-icons/linkedin.png" alt="linkedin-icon">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="./assets/images/main-icons/Twitter.png" alt="">
+              <img src="./assets/images/main-icons/Twitter.png" alt="Twitter-icon">
             </a>
           </li>
         </ul>
         <form class="input-form">
-          <input type="text" placeholder="Enter your email address" name="email">
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
           <button type="submit">Subscribe</button>
         </form>
       </div>
     </div>
   </footer>
-  <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

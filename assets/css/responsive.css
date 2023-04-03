@@ -54,6 +54,50 @@
     }
 }
 
+/* main-section */
+@media (max-width: 1000px) {
+    main .main-section {
+        height: 100vh;
+        background-position: center center;
+    }
+
+    main .main-section .main-section__hero .banner-title {
+        font-size: var(--font-size-medium);
+    }
+}
+
+@media (max-width: 620px) {
+    main .main-section {
+        height: 100vh;
+        background-position: center center;
+    }
+
+    main .main-section .main-section__hero .banner-title{
+        font-size: var(--font-size-small);
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    main .main-section {
+        height: 60vh;
+        background-position: center center;
+    }
+
+    main .main-section .main-section__hero {
+        height: 80%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main .main-section .main-section__hero .banner-title,
+    main .main-section .main-section__hero p,
+    main .main-section .main-section__hero a button {
+        font-size: var(--font-size-smaller);
+    }
+}
+
 
 
 /* div > features */
@@ -108,9 +152,56 @@
     }
 }
 
-/* footer */
+/*modal*/
 
-@media (max-width: 520px) {
+
+@media (max-width: 550px) {
+
+    .login-form label,
+    .login-form input,
+    .login-form button,
+    .remember-me,
+    .forgot-password-link {
+        font-size: var(--font-size-smaller);
+    }
+
+    .submit-link button {
+        padding: 0.4rem 1rem;
+    }
+
+}
+
+@media (max-width: 385px) {
+    .modal {
+        left: 15%;
+        top: 20%;
+        width: 70%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .login-form input {
+        padding: 0.1rem;
+    }
+
+    .login-form input[type="text"]::placeholder {
+        font-size: var(--font-size-smaller);
+    }
+
+}
+
+/* footer */
+@media (max-width: 720px) {
+    footer .menu,
+    footer form {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 630px) {
 
     footer ul,
     footer form {
