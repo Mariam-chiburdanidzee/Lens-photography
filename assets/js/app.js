@@ -2,7 +2,17 @@ const burger = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav-menu");
 const htmlElement = document.querySelector("html");
 const navLinks = document.querySelectorAll(".nav-link");
+const hiddenImages = document.querySelectorAll(".hidden-image");
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-image");
+    }
+  });
+});
+
+hiddenImages && hiddenImages.forEach((el) => observer.observe(el));
 const handleNavLinksAnimation = (navM) => {
   for (let i = 0; i < navLinks.length; i++) {
     if (navM.classList.contains("menu-active")) {
