@@ -72,7 +72,7 @@ header nav .nav-menu {
     gap: 4rem;
 }
 
- header nav ul li a{
+header nav ul li a {
     color: var(--primary-color);
     text-transform: uppercase;
     font-size: var(--primary-font-size);
@@ -80,7 +80,8 @@ header nav .nav-menu {
     display: inline-block;
     position: relative;
 }
-.active-link{
+
+.active-link {
     border-bottom: 1px solid #ecc5cb;
 }
 
@@ -137,17 +138,11 @@ main .main-section .main-section__hero {
     align-items: center;
     gap: 2rem;
     color: var(--text-primary-color);
-    /* position: fixed; */
-    /* top: 0;
-    left: 0; */
-
 }
 
 
 main .main-section .main-section__hero h1,
 main .main-section .main-section__hero p {
-
-    /* transform: translateX(-100%); */
     animation: slide-in 1s forwards;
 }
 
@@ -186,7 +181,6 @@ main .main-section .main-section__hero .sign-up {
 
 .slide-button {
     position: absolute;
-    /* bottom: 20px; */
     bottom: 20%;
     animation: slide-in-right 1s forwards;
 }
@@ -359,7 +353,6 @@ h3 {
 
 .photo img {
     width: 100%;
-    /* height: 100%; */
     border-radius: 5px;
     object-fit: cover;
     filter: drop-shadow(2px 1px 5px #7e5915);
@@ -480,7 +473,7 @@ footer form {
     padding: 20px;
     max-width: 350px;
     width: 90%;
-    
+
 }
 
 .close {
@@ -569,7 +562,7 @@ footer form {
 
 .image-wrapper:hover {
     transform: translateY(-25px);
-} 
+}
 
 .image-wrapper:hover .image-box {
     transform: scale(1.05);
@@ -706,9 +699,12 @@ footer form {
     justify-content: space-between;
     align-items: center;
     padding: 18px 5px 5px;
+    animation: slide-in-right 1s forwards;
+
 }
 
 .image-link h6 {
+    color: var(--text-primary-color);
     text-transform: uppercase;
     font-family: "DM Sans Bold", sans-serif;
     font-size: var(--font-size-smaller);
@@ -717,21 +713,28 @@ footer form {
 
 .arrow {
     width: 70px;
+    cursor: pointer;
 }
 
 .gallery-main-cover {
-    background-image: url(../images/main-img/gallery-images/Bioluminescent-Plankton-.webp);
+    background-image: url(../images/main-img/gallery-images/sea.jpg);
     background-size: cover;
     height: 100vh;
 }
 
+.height {
+    height: 100%;
+}
+
 .cover-box {
-    height: 80%;
-    width: 45%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.2rem;
+    margin: auto;
+    align-items: center;
 }
 
 .cover-box>h5 {
@@ -744,22 +747,46 @@ footer form {
     font-size: var(--font-size-medium);
     color: var(--text-primary-color);
     text-transform: uppercase;
-    letter-spacing: 4.17px;
+    letter-spacing: 2.8px;
 }
 
 .cover-box .date {
     font-size: var(--font-size-small);
-    color: rgba(223, 223, 223, 0.6);
+    color: #d9d9d9;
 }
 
 .cover-box .date>span {
     font-size: var(--font-size-small);
     color: var(--text-primary-color);
+    font-weight: bold;
 }
 
 .photo-story {
     font-size: var(--font-size-small);
-    color: rgba(223, 223, 223, 0.6);
+    color: #d9d9d9;
     line-height: var(--line-height);
     letter-spacing: 1px;
+    animation: slide-in 1s forwards;
+}
+
+.cover-box>h5,
+.cover-box>h1,
+.cover-box .date,
+.cover-box .date>span {
+    animation: slide-in-right 1s forwards;
+    ;
+}
+
+@media (max-width:1000px) {
+
+    .cover-box>h1 {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media (max-width:640px) {
+    .cover-box .photo-story,
+    .cover-box>h1 {
+        font-size: var(--font-size-smaller);
+    }
 }

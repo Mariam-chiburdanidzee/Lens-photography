@@ -203,6 +203,20 @@
         grid-template-columns: 1fr;
     }
     }
+
+    @media (max-width:1000px) {
+
+        .cover-box>h1 {
+            font-size: var(--font-size-small);
+        }
+    }
+    
+    @media (max-width:640px) {
+        .cover-box .photo-story,
+        .cover-box>h1 {
+            font-size: var(--font-size-smaller);
+        }
+    }
     
     
     /* footer */
