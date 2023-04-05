@@ -465,21 +465,24 @@ footer form {
 /* The Modal (background) */
 .modal {
     display: none;
-    position: absolute;
-    z-index: 1;
-    left: 25%;
-    top: 25%;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
     background-color: rgba(59, 24, 24, 0.4);
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: var(--text-primary-color);
-    margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
-    width: 80%;
+    max-width: 350px;
+    width: 90%;
     /* Could be more or less, depending on screen size */
 }
 

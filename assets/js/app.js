@@ -16,9 +16,8 @@ hiddenImages && hiddenImages.forEach((el) => observer.observe(el));
 const handleNavLinksAnimation = (navM) => {
   for (let i = 0; i < navLinks.length; i++) {
     if (navM.classList.contains("menu-active")) {
-      navLinks[i].style.animation = `navLinkFade 1s ease ${
-        i / 7 + 0.2
-      }s forwards`;
+      navLinks[i].style.animation = `navLinkFade 1s ease ${i / 7 + 0.2
+        }s forwards`;
     } else {
       navLinks[i].style.animation = "";
     }
@@ -41,16 +40,23 @@ burger.addEventListener("click", handleBurgerBar);
 const modal = document.querySelector(".modal");
 const signUpBtn = document.querySelector(".slide-button");
 const closeBtn = document.querySelector(".close");
-signUpBtn.addEventListener("click", function() {
-  modal.style.display = "block";
+signUpBtn.addEventListener("click", function () {
+  document.documentElement.scrollTop = 0;
+  htmlElement.classList.add("overflow-h");
+  modal.style.display = "flex";
 });
 
-closeBtn.addEventListener("click", function() {
+closeBtn.addEventListener("click", function () {
+  htmlElement.classList.remove("overflow-h");
   modal.style.display = "none";
 });
 
-window.addEventListener("click", function(event) {
-  if (event.target === modal) {
-    modal.style.display = "block";
+window.addEventListener("click", function (event) {
+
+
+  if (event.target.style.display === "flex") {
+    event.target.style.display="none"
   }
+
 });
+
