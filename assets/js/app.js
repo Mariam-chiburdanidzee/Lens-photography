@@ -55,7 +55,9 @@ window.addEventListener("click", function (event) {
 
 
   if (event.target.style.display === "flex") {
+    htmlElement.classList.remove("overflow-h");
     event.target.style.display="none"
+    
   }
 
 });

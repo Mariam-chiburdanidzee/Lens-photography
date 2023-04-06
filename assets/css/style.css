@@ -81,10 +81,6 @@ header nav ul li a {
     position: relative;
 }
 
-.active-link {
-    border-bottom: 1px solid #ecc5cb;
-}
-
 header nav .nav-menu .nav-li a:after {
     content: '';
     position: absolute;
@@ -95,13 +91,20 @@ header nav .nav-menu .nav-li a:after {
     background-color: #ecc5cb;
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out ;
 }
 
 header nav .nav-menu .nav-li a:hover:after {
     visibility: visible;
     transform: scaleX(1);
 }
+
+
+header nav .nav-menu .nav-li a.active-link::after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 
 header nav .burger {
     display: none;
