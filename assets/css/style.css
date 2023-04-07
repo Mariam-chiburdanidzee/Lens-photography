@@ -7,13 +7,7 @@
     --font-size-large: 3rem;
     --font-size-medium: 1.8rem;
     --line-height: 1.5;
-
-
-
-
-
 }
-
 
 html,
 body {
@@ -91,7 +85,7 @@ header nav .nav-menu .nav-li a:after {
     background-color: #ecc5cb;
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out;
 }
 
 header nav .nav-menu .nav-li a:hover:after {
@@ -100,7 +94,7 @@ header nav .nav-menu .nav-li a:hover:after {
 }
 
 
-header nav .nav-menu .nav-li a.active-link::after{
+header nav .nav-menu .nav-li a.active-link::after {
     visibility: visible;
     transform: scaleX(1);
 }
@@ -122,7 +116,6 @@ header nav .burger>.line {
 main .main-section {
     background: url("../images/main-img/nature.jpg") no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     height: 100vh;
 }
 
@@ -575,18 +568,10 @@ footer form {
     transition: transform 0.2s ease-in-out;
 }
 
-.image-text {
-    bottom: 0;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-}
 
 .image-wrapper:hover .image-text {
     opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -679,6 +664,12 @@ footer form {
 .image-text {
     border-bottom: 1px solid #ffffff;
     padding: 10px 5px 18px;
+}
+
+.text-hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .image-text>span {
@@ -777,19 +768,104 @@ footer form {
 .cover-box .date,
 .cover-box .date>span {
     animation: slide-in-right 1s forwards;
-    ;
 }
 
-@media (max-width:1000px) {
 
-    .cover-box>h1 {
+.about-wrapper {
+    display: flex;
+}
+
+.features .section_text {
+    height: 480px;
+}
+
+.about-box {
+    width: 70%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: var(--text-primary-color);
+}
+
+.about-box-text {
+    /* height: 50%; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    animation: slide-in 1s forwards;
+}
+
+.about-title {
+    font-size: var(--font-size-medium);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 5rem;
+}
+
+.about-cover-image {
+    background-image: url(../images/main-img/about-images/nicolas-ladino-silva-o2DVsV2PnHE-unsplash.jpg);
+    background-size: cover;
+    width: 100vh;
+
+}
+
+.title-discreption {
+    line-height: var(--line-height);
+    font-size: var(--font-size-small);
+}
+
+.about-background-color {
+    background-color: hsl(92.94deg 60% 70% / 52%);
+}
+
+.card {
+    width: 25%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.card .text {
+    color: var(--text-primary-color);
+    padding-top: 2rem;
+}
+
+.card p {
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+@media (max-width:865px) {
+    .about-box-text {
+        animation: none;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .about-box {
+        width: 100%;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    .about-box-text {
+        height: 60%;
+    }
+
+    .about-title {
         font-size: var(--font-size-small);
     }
+
 }
 
-@media (max-width:640px) {
-    .cover-box .photo-story,
-    .cover-box>h1 {
+@media (max-width: 585px) {
+
+    .title-discreption,
+    .about-title {
         font-size: var(--font-size-smaller);
     }
 }
