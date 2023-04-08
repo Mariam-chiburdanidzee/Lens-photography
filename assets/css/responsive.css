@@ -234,6 +234,41 @@
     }
 }
 
+/* about */
+
+@media (max-width:865px) {
+    .about-box-text {
+        animation: none;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .about-box {
+        width: 100%;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    .about-box-text {
+        height: 60%;
+    }
+
+    .about-title {
+        font-size: var(--font-size-small);
+    }
+
+}
+
+@media (max-width: 585px) {
+
+    .title-discreption,
+    .about-title {
+        font-size: var(--font-size-smaller);
+    }
+}
 
 /* footer */
 @media (max-width: 720px) {
@@ -245,7 +280,7 @@
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 450px) {
 
     footer ul,
     footer form {
