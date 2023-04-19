@@ -33,7 +33,7 @@ const handleBurgerBar = () => {
   handleNavLinksAnimation(navMenu);
 };
 
-// events
+
 burger.addEventListener("click", handleBurgerBar);
 
 
@@ -56,8 +56,8 @@ window.addEventListener("click", function (event) {
 
   if (event.target.style.display === "flex") {
     htmlElement.classList.remove("overflow-h");
-    event.target.style.display="none"
-    
+    event.target.style.display = "none"
+
   }
 
 });
