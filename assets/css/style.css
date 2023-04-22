@@ -944,6 +944,18 @@ footer form {
     background-image: url(../images/blog-images/elephants.jpg)
 }
 
+.second-post {
+    background-image: url(../images/blog-images/second-post-img/green-mountains.jpg);
+}
+
+.third-post {
+    background-image: url(../images/blog-images/third-post-img/ken-cheung-KonWFWUaAuk-unsplash.jpg);
+}
+
+.fourth-post {
+    background-image: url(../images/blog-images/woman.jpg);
+}
+
 .post-wrapper {
     max-width: 730px;
 }
