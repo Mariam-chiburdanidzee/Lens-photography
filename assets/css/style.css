@@ -50,6 +50,24 @@ header {
     margin: 0 auto;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    font-size: var(--font-size-small);
+    background-color: var(--primary-color);
+    color: var(--background-primary-color);
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#myBtn:hover {
+    background-color: var(--text-primary-color);
+    color: var(--primary-color);
+}
+
 .section-separation {
     margin: 4rem 0 2rem;
 
