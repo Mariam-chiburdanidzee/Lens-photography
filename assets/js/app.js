@@ -67,18 +67,22 @@ window.addEventListener("click", function (event) {
 
 });
 
-let mybutton = document.getElementById("myBtn");
-window.onscroll = function () { scrollFunction() };
+const scrollTopBtn = document.getElementById("scroll-top-btn");
+
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    scrollTopBtn.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    scrollTopBtn.style.display = "none";
   }
 }
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
+window.addEventListener("scroll", function () {
+  scrollFunction()
+})
+scrollTopBtn.addEventListener("click", topFunction)

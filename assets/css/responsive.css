@@ -26,7 +26,6 @@
     .slide-button,
     main .main-section .main-section__hero h1,
     main .main-section .main-section__hero p {
-        animation: none;
         position: inherit;
     }
 
@@ -42,6 +41,7 @@
         transform: translateX(-100%);
         background: #221917;
         transition: transform 0.5s ease;
+        z-index: 99;
     }
 
     header nav .nav-menu.menu-active {
@@ -214,7 +214,7 @@
     }
 }
 
-@media (max-width:865px) {
+/* @media (max-width:865px) {
 
     .photo-story,
     .cover-box>h5,
@@ -224,7 +224,7 @@
     .image-link {
         animation: none;
     }
-}
+} */
 
 @media (max-width:640px) {
 
@@ -236,12 +236,12 @@
 
 /* about */
 
-@media (max-width:865px) {
+/* @media (max-width:865px) {
     .about-box-text {
         animation: none;
     }
 
-}
+} */
 
 @media (max-width: 730px) {
     .about-box {

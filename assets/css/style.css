@@ -50,7 +50,7 @@ header {
     margin: 0 auto;
 }
 
-#myBtn {
+#scroll-top-btn {
     display: none;
     position: fixed;
     bottom: 1em;
@@ -59,11 +59,16 @@ header {
     background-color: var(--primary-color);
     color: var(--background-primary-color);
     cursor: pointer;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 1em;
 }
 
-#myBtn:hover {
+#scroll-top-btn>img {
+    width: 30px;
+
+}
+
+#scroll-top-btn:hover {
     background-color: var(--text-primary-color);
     color: var(--primary-color);
 }
