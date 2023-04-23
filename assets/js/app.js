@@ -40,16 +40,21 @@ burger.addEventListener("click", handleBurgerBar);
 const modal = document.querySelector(".modal");
 const signUpBtn = document.querySelector(".slide-button");
 const closeBtn = document.querySelector(".close");
-signUpBtn.addEventListener("click", function () {
-  document.documentElement.scrollTop = 0;
-  htmlElement.classList.add("overflow-h");
-  modal.style.display = "flex";
-});
+if (signUpBtn) {
+  signUpBtn.addEventListener("click", function () {
+    document.documentElement.scrollTop = 0;
+    htmlElement.classList.add("overflow-h");
+    modal.style.display = "flex";
+  });
+}
+if (closeBtn) {
+  closeBtn.addEventListener("click", function () {
+    htmlElement.classList.remove("overflow-h");
+    modal.style.display = "none";
+  });
 
-closeBtn.addEventListener("click", function () {
-  htmlElement.classList.remove("overflow-h");
-  modal.style.display = "none";
-});
+}
+
 
 window.addEventListener("click", function (event) {
 
